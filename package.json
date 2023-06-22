@@ -24,6 +24,13 @@
         "configuration": "./language-configuration.json"
       }
     ],
+    "grammars": [
+      {
+        "language": "crane",
+        "scopeName": "source.crane",
+        "path": "./syntaxes/crane.tmGrammar.json"
+      }
+    ],
     "commands": [
       {
         "command": "vscode-crane.helloWorld",

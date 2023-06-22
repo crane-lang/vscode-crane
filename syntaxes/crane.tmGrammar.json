@@ -1,0 +1,48 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Crane",
+  "scopeName": "source.crane",
+  "patterns": [
+    { "include": "#comment" },
+    { "include": "#keyword" },
+    { "include": "#item" },
+    { "include": "#expr" }
+  ],
+  "repository": {
+    "comment": {
+      "patterns": [
+        {
+          "name": "comment.line.crane",
+          "match": "//.*"
+        }
+      ]
+    },
+    "keyword": {
+      "patterns": [
+        {
+          "name": "keyword.control.crane",
+          "match": "\\b(fn|let|mod|pub|struct|union|use)\\b"
+        }
+      ]
+    },
+    "item": {
+      "patterns": [
+        {
+          "name": "keyword.operator.path_delimiter.crane",
+          "match": "(::)"
+        }
+      ]
+    },
+    "expr": {
+      "patterns": [{ "include": "#literal" }]
+    },
+    "literal": {
+      "patterns": [{ "include": "#string_literal" }]
+    },
+    "string_literal": {
+      "name": "string.quoted.double.crane",
+      "begin": "\"",
+      "end": "\""
+    }
+  }
+}
