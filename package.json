@@ -3,11 +3,13 @@
   "displayName": "Crane",
   "description": "VS Code extension for Crane.",
   "version": "0.0.1",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.79.0"
   },
   "categories": [
-    "Other"
+    "Programming Languages",
+    "Language Packs"
   ],
   "activationEvents": [],
   "main": "./dist/extension.js",
