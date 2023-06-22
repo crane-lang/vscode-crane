@@ -1,16 +1,18 @@
 {
   "name": "vscode-crane",
   "displayName": "Crane",
-  "description": "VS Code extension for Crane.",
+  "publisher": "crane-lang",
   "version": "0.0.1",
   "license": "MIT",
-  "engines": {
-    "vscode": "^1.79.0"
-  },
+  "repository": "git@github.com:crane-lang/vscode-crane.git",
+  "description": "Crane extension for Visual Studio Code",
   "categories": [
     "Programming Languages",
     "Language Packs"
   ],
+  "engines": {
+    "vscode": "^1.79.0"
+  },
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
